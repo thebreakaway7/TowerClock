@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Clock Enthusiest</title>
+   <link rel="stylesheet" href="./dist/main.min.css">
+</head>
+<body class="flex flex-col justify-between h-screen">
+   <div class="overlay h-full absolute"></div>
+   <header class="p-5 lg:p-10">
+      <div id="social" class="text-center lg:text-right space-x-3">
+         <a href="#social"><i class="text-white lg:text-black text-xl icon-facebook"></i></a>
+         <a href="#social"><i class="text-white lg:text-black text-xl icon-twitter"></i></a>
+         <a href="#social"><i class="text-white lg:text-black text-xl icon-instagram"></i></a>
+      </div>
+   </header>
+   <section class="wrap h-full flex items-center">
+      <div class="content max-w-lg lg:ml-20 py-10 flex flex-col transform -translate-y-10">
+         <div class="px-10 text-white flex flex-col">
+            <h3 class="text-4xl text-center">Chime Calculator</h3>
+            <hr class="my-5 w-60 mx-auto">
+            <form action="" class="w-full mx-auto text-center">
+               <div class="time my-5">
+                  <p>Starting Time</p>
+                  <div class="input">
+                     <input type="time" id="start" name="start" min="1" max="24" required>
+                     <p class="alert"><small>Missing starting time</small></p>
+                  </div>
+               </div>
+               <div class="time my-5">
+                  <p>Ending Time</p>
+                  <div class="input">
+                     <input type="time" id="end" name="end" min="1" max="24" required>
+                     <p class="alert"><small>Missing ending time</small></p>
+                  </div>
+               </div>
+               <button id="button">Count Chimes</button>
+            </form>
+            <hr class="my-5 w-60 mx-auto">
+            <div class="counter mx-auto text-center">
+               <p>You will hear</p>
+               <div class="chimes text-3xl font-bold">- -</div>
+               <p>Chimes</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer class="py-5 bg-black text-white px-10 lg:px-0 text-sm">
+      <div class="max-w-7xl mx-auto flex justify-between">
+         <div>Built by XDS, Copyright 2022</div>
+         <div class="lg:space-x-10 text-right">
+            <a href="#contact">Contact Us</a>
+            <a href="#sitemap">Sitemap</a>
+         </div>
+      </div>
+   </footer>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="./js/main.js"></script>
+</body>
+</html>

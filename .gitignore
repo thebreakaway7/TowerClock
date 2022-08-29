@@ -1,0 +1,8 @@
+/node_modules
+config.json
+package-lock.json
+package.json
+styles/
+postcss.config.js
+tailwind.config.js
+webpack.config.js
